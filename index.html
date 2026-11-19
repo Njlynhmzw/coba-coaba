@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PKBM Lentera Ilmu — Pusat Kegiatan Belajar Masyarakat</title>
+  <meta name="description" content="PKBM Lentera Ilmu: layanan pendidikan kesetaraan Paket A, B, C dan program keterampilan bagi masyarakat.">
+  <meta name="theme-color" content="#14532d">
+  <meta property="og:title" content="PKBM Lentera Ilmu">
+  <meta property="og:description" content="Membuka Akses Pendidikan, Menyalakan Harapan, Membangun Masa Depan.">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a href="#beranda" class="brand">
+      <img src="assets/logo.png" alt="Logo PKBM Lentera Ilmu" width="40" height="49">
+      <span>PKBM <b>Lentera Ilmu</b></span>
+    </a>
+    <button class="nav__toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="menu" class="menu">
+      <a href="#beranda">Beranda</a>
+      <a href="#profil">Profil</a>
+      <a href="#program">Program</a>
+      <a href="#keterampilan">Keterampilan</a>
+      <a href="#struktur">Struktur</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak" class="menu__cta">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="beranda">
+    <div class="wrap hero__in">
+      <div class="hero__text">
+        <p class="eyebrow">Pusat Kegiatan Belajar Masyarakat</p>
+        <h1>PKBM <em>Lentera Ilmu</em></h1>
+        <p class="hero__slogan" data-bind="slogan"></p>
+        <p class="hero__lead" data-bind="pengantar"></p>
+        <div class="hero__btns">
+          <a class="btn btn--gold" href="#profil">Kenali PKBM</a>
+          <a class="btn btn--ghost" href="#program">Lihat Program</a>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <img src="assets/logo.png" alt="" width="270">
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTIK -->
+  <section class="stats">
+    <div class="wrap stats__grid" id="stats"></div>
+  </section>
+
+  <!-- PROFIL -->
+  <section class="sec" id="profil">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Profil PKBM</p>
+        <h2>Mengenal Lentera Ilmu</h2>
+      </header>
+      <div class="profil">
+        <div class="profil__main">
+          <h3>Tentang Kami</h3>
+          <div id="sejarah"></div>
+          <div id="tujuan"></div>
+        </div>
+        <aside class="card profil__id">
+          <h3>Identitas Lembaga</h3>
+          <dl id="identitas"></dl>
+        </aside>
+      </div>
+      <div class="vm">
+        <article class="card vm__card">
+          <span class="vm__tag">Visi</span>
+          <p id="visi"></p>
+        </article>
+        <article class="card vm__card">
+          <span class="vm__tag">Misi</span>
+          <ol id="misi"></ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM -->
+  <section class="sec sec--tint" id="program">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Program Pendidikan</p>
+        <h2>Paket Kesetaraan</h2>
+        <p class="sec__sub">Pendidikan kesetaraan yang diakui, dapat ditempuh sesuai kebutuhan dan waktu belajar warga.</p>
+      </header>
+      <div class="cards" id="paket"></div>
+
+      <div class="daftar">
+        <div>
+          <h3>Informasi Pendaftaran</h3>
+          <p class="muted">Persyaratan</p>
+          <ul id="syarat"></ul>
+        </div>
+        <div>
+          <p class="muted">Alur pendaftaran</p>
+          <ol class="steps" id="alur"></ol>
+          <div class="daftar__btns" id="daftarBtns"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KETERAMPILAN -->
+  <section class="sec" id="keterampilan">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Program Keterampilan</p>
+        <h2>Kursus &amp; Pelatihan</h2>
+        <p class="sec__sub" id="ketSub"></p>
+      </header>
+      <div class="cards cards--skill" id="skill"></div>
+    </div>
+  </section>
+
+  <!-- STRUKTUR -->
+  <section class="sec sec--tint" id="struktur">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Struktur Kepengurusan</p>
+        <h2>Struktur PKBM Lentera Ilmu</h2>
+      </header>
+      <div class="org" id="org"></div>
+
+      <h3 class="jd__title">Uraian Tugas</h3>
+      <div class="jd" id="jobdesk"></div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="sec" id="galeri">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Dokumentasi</p>
+        <h2>Kegiatan Pembelajaran</h2>
+      </header>
+      <div class="gallery" id="gallery"></div>
+      <div id="berita"></div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="sec sec--dark" id="kontak">
+    <div class="wrap">
+      <header class="sec__head">
+        <p class="eyebrow">Kontak</p>
+        <h2>Hubungi Kami</h2>
+      </header>
+      <div class="kontak">
+        <div class="kontak__info" id="kontakInfo"></div>
+        <div class="kontak__map" id="peta"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <img src="assets/logo.png" alt="" width="36" height="45">
+      <div>
+        <strong>PKBM Lentera Ilmu</strong>
+        <small data-bind="slogan"></small>
+      </div>
+    </div>
+    <div class="foot__soc" id="footSoc"></div>
+    <p class="foot__copy">&copy; <span id="year"></span> PKBM Lentera Ilmu. Hak cipta dilindungi.</p>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" hidden target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 2.1 17.7L1 23l5.4-1.4A11.8 11.8 0 0 0 12 23h0a11.8 11.8 0 0 0 8.5-19.5zM12 21.1a9.7 9.7 0 0 1-5-1.4l-.4-.2-3.2.8.9-3.1-.2-.4a9.7 9.7 0 1 1 7.9 4.3zm5.3-7.3c-.3-.1-1.7-.8-2-.9s-.5-.1-.7.1-.8.9-.9 1.1-.3.2-.6.1a7.9 7.9 0 0 1-3.9-3.4c-.3-.5.3-.5.9-1.6a.6.6 0 0 0 0-.5l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.4 3.4 14.7 14.7 0 0 0 5.6 4.9c2.1.9 2.1.6 2.5.6a2.1 2.1 0 0 0 1.4-1c.2-.5.2-.9.1-1s-.2-.2-.5-.3z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__x" aria-label="Tutup">&times;</button>
+  <img alt="">
+  <p></p>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
